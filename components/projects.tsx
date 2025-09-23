@@ -30,12 +30,12 @@ const projects: Project[] = [
     code: "#projects",
   },
   {
-    title: "VedicAstroAI",
+    title: "VedicAstroAI ( Beta )( Github )",
     description: "VedicAstroAI is an AI-powered astrology application based on Vedic astrology principles. It provides personalized horoscopes, daily predictions, compatibility checks, and remedies.",
     img: "/vedic-astro-ai.png",
     tags: ["React", "node.js", "Gemini API"],
     demo: "#projects",
-    code: "#projects",
+    code: "https://github.com/vedicastroai2611/VedicAstroAI",
   },
 ]
 
