@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Github, MessageCircle } from "lucide-react"
 
 export function Hero() {
   return (
@@ -6,15 +7,19 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-28">
         {/* Left copy */}
         <div className="space-y-6">
-          <p className="text-4xl md:text-6xl font-bold leading-tight">
+          <p className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
             {"Hi, I'm"}{" "}
             <span className="text-[oklch(0.78_0.17_230)] drop-shadow-[0_0_16px_oklch(0.78_0.17_230)]">Sanskar Sontakke</span>
             <br />
             <span className="text-4xl md:text-6xl">Web Developer</span>
           </p>
-          <p className="max-w-xl text-balance text-base md:text-lg text-foreground/80">
-            Full-Stack Developer | Ed-Tech Enthusiast | Creator of ReactiQuiz 🧠✨
+          {/* New: gradient subtitle */}
+          <p className="font-semibold text-transparent bg-clip-text bg-gradient-to-tr from-cyan-400 to-indigo-400 text-lg md:text-xl">
+            Full-Stack | Ed-Tech | AI Builder 
           </p>
+          <div className="flex gap-3 mb-4">
+            <a href="https://github.com/SanskarSontakke" target="_blank" rel="noopener" aria-label="GitHub" className="rounded-full p-2 hover:bg-[oklch(0.78_0.17_230)]/10"><Github size={24} className="text-[oklch(0.88_0.08_230)]" /></a>
+          </div>
           <div>
             <a
               href="#contact"

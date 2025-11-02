@@ -44,11 +44,11 @@ export function Projects() {
     <section id="projects" className="py-16 md:py-24">
       <SectionTitle id="projects-title">Projects</SectionTitle>
 
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-6 pt-10 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 pt-10 md:grid-cols-3">
         {projects.map((p) => (
           <article
             key={p.title}
-            className="card-glow rounded-2xl border border-[var(--border)]/50 bg-card/60 transition-all"
+            className="glass-card card-glow transition-all"
           >
             <div className="relative h-48 w-full overflow-hidden rounded-t-2xl">
               <Image src={p.img || "/placeholder.svg"} alt={`${p.title} screenshot`} fill className="object-cover" />

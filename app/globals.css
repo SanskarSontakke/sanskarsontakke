@@ -187,3 +187,16 @@ html {
   @apply sticky top-0 z-50 backdrop-blur supports-backdrop-blur:bg-background/70;
   box-shadow: inset 0 -1px 0 color-mix(in oklab, var(--brand) 35%, transparent 65%);
 }
+
+/* New: gradient backgrounds and glass effects */
+.gradient-section-bg {
+  background: linear-gradient(135deg, oklch(0.13 0.02 255) 70%, oklch(0.78 0.17 230) 100%);
+  background-blend-mode: lighten;
+}
+.glass-card {
+  background: rgba(28,30,36, 0.85);
+  backdrop-filter: blur(16px) saturate(180%);
+  border-radius: var(--radius-lg, 1rem);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.17);
+  border: 1px solid rgba(255,255,255,0.12);
+}
